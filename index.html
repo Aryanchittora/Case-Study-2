@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Lens VS Mobile Net</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Lobster+Two:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <center>
+          <h3 class="btn btn-primary head">Case Study</h3>
+          <hr>
+
+          <p class="btn btn-default title">Case Study Between Google Lens & Mobile Net</p>
+          <br><br>
+          <div class="vs">
+             <h4 class="google_lens">Google Lens <span><img src="Google Lens.png"></span></h4>
+           
+             <h4 class="verses"><img src="vs.jpg"></h4>
+
+             <h4 class="MobileNet">Mobile Net <span><img src="Mobilenet.jpg"></span></h4>
+         </div>
+
+         <br>
+
+         <div class="case_study">
+             <img src="Bottle.jpg">
+             <br>
+             
+             <button class="btn btn-info res" data-toggle="collapse" data-target="#g_lens">Results On &nbsp;<span style="font-family: cursive;" class="btn btn-danger">Google Lens</span></button>
+             <div class="collapse content" id="g_lens">Google Lens guessed 3 objects right.</div>
+             <br><br>
+
+             <button class="btn btn-info res" data-toggle="collapse" data-target="#m_net">Results On &nbsp;<span style="font-family: cursive;" class="btn btn-danger">Mobile-Net</span></button>
+             <div class="collapse content" id="m_net">Mobile-Net guessed 2 objects right.</div>
+             <br>
+
+             <div id="result">
+                 I tested 5 objects with both the models
+                 <hr>
+                 You can see the results above 
+             </div>
+
+             <div id="result2">
+                 In My Case Google Lens was more accurate
+             </div>
+         </div>
+      </center>
+    </div>
+</body>
+</html>
